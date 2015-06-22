@@ -12,7 +12,6 @@
 <link href="styles/main.css" rel="stylesheet" media="screen, projection">
 <meta name="viewport" content="initial-scale=1.0" />
 <link rel="stylesheet" href="styles/base.css" type="text/css">
-<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>
 		$(function(){
@@ -27,7 +26,7 @@
 			$('#load').fadeOut();
 			$.getJSON('data.json', function(data){
 				$.each(data.paintings.painting, function(k,v){
-					var tutke - v.title;
+					var title - v.title;
 					var img = v.image;
 					var price = v.price;
 					$('#container').append('<div class="painting"><img src="images/' + img + '" width="200" height="225" alt="' + title + '"/><br/><div class="title">' + title + '<br/>$' + price + '</div></div>')
